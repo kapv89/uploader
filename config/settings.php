@@ -4,8 +4,8 @@ return [
 	'drivers' => [
 		'aws' => [
 			'class' => 'Uploader\\Driver\\Aws',
-			'container' => 'musejam-files',
-			'base_url' => AwsUploader::aws_url() . 'musejam-files/'
+			'container' => '',
+			'base_url' => ''
 		],
 		'laravel' => [
 			'class' => 'Uploader\\Driver\\Laravel',

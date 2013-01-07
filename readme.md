@@ -18,7 +18,7 @@ The format of $fields array is given below:
 
 once you have the $fields array, and the driver you want to use run the uploader like this:
 
-	$files = Uploader::driver($driver)->run();
+	$files = Uploader::driver($driver)->fields($fields)->run();
 
 	/**
 	* This method returns an array of the form
@@ -30,13 +30,11 @@ once you have the $fields array, and the driver you want to use run the uploader
 	* Or you can do
 	*/
 
-	files = Uploader::driver($driver)->run();
-
 	/**
 	* In order to attach the uploaded files to current request's input, just replace run with attach
 	*/
 
-	Uploader::driver($driver)->attach();
+	Uploader::driver($driver)->fields($fields)->attach();
 
 	/**If you have a default driver set in config, you can just do**/
 
