@@ -1,3 +1,5 @@
+REQUIRES PHP 5.4
+
 This bundle sets up a convention for uploads so that they are handled in a standardized manner
 and are capable of dealing with different storage systems.
 
